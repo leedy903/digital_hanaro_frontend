@@ -1,0 +1,80 @@
+.title {
+    text-align: center;
+    font-weight: 600;
+}
+
+.signup-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+    max-width: 600px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#title {
+    float: right;
+    font-weight: 600;
+}
+
+#update-at {
+    float: right;
+    font-weight: 600;
+}
+
+
+
+#divider {
+    border: 0;
+    height: 2px;
+    margin: 0;
+}
+
+h5 {
+    color: #495057;
+}
+
+p {
+    margin: 0;
+}
+
+#delete-btn {
+    padding: 2px;
+}
+
+#edit-btn {
+    padding: 2px;
+}
+
+button {
+    color: #495057;
+    background-color: transparent;
+}
+
+input {
+    border-width: 0 0 1px;
+}
+
+label {
+    font-weight: 500;
+}
+
+body {
+    background: linear-gradient(to right, #6A11CB, #2575FC);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

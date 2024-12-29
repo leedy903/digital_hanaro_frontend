@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="board.css">
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="board-container">
+        <!-- 게시판 목록 (List) -->
+        <div id="list-section">
+            
+        </div>
+
+        <!-- 게시글 보기 (View) -->
+        <div id="view-section" class="hidden">
+            <div class="board-container ">
+                <h2 class="title">게시판</h2>
+                <div class="container mt-3">
+                    <form class="row g-3">
+                        <div class="col-8 p-3">
+                            
+                        </div>
+
+                        <div id="delete-btn" class="col-2">
+                            <button type="submit" class="btn btn-primary w-100">삭제</button>
+                        </div>
+
+                        <div id="edit-btn" class="col-2">
+                            <button type="submit" class="btn btn-primary w-100">수정</button>
+                        </div>
+
+                        <div class="col-3 p-3">
+                            <h5>제목</h5>
+                        </div>
+                        <div class="col-9 p-3">
+                            <p id="title">
+                                게시글 제목
+                            </p>
+                        </div>
+
+                        <div class="col-3">
+                            <h5>작성일자</h5>
+                        </div>
+
+                        <div class="col-9">
+                            <p id="update-at">
+                                YYYY:mm:dd
+                            </p>
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <hr id="divider" width="100%" color="ced4da" noshade/>
+                        </div>
+
+
+                        <div class="col-12 p-3">
+                            <p>
+                            Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah 
+                            </p>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 게시글 작성 (Write) -->
+        <div id="write-section" class="hidden">
+
+        </div>
+    </div>
+</body>
+
+<script>
+
+    
+function showListSection() {
+    document.getElementById("list-section").classList.remove("hidden");
+    document.getElementById("view-section").classList.add("hidden");
+    document.getElementById("write-section").classList.add("hidden");
+}
+function showViewSection() {
+    document.getElementById("list-section").classList.add("hidden");
+    document.getElementById("view-section").classList.remove("hidden");
+    document.getElementById("write-section").classList.add("hidden");
+}
+function showWriteSection() {
+    document.getElementById("list-section").classList.add("hidden");
+    document.getElementById("view-section").classList.add("hidden");
+    document.getElementById("write-section").classList.remove("hidden");
+}
+</script>
